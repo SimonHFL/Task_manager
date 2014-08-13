@@ -1,0 +1,63 @@
+* 			{font-family: courier;
+			}
+body 		{background-color: #FCFCFC;
+	 		}
+.task 		{border-style: solid;
+		 	border-width: thin;
+			border-radius:8px;
+		 	border-color: #C0C0C0; 
+		 	margin-bottom: 10px; 
+		 	padding: 0px 0px 0px 10px;
+		 	width:500px;
+	 	 	background-color:white;
+			text-align: left
+			
+		}
+
+			
+.newTask	{border-style: dashed;
+		 	border-width: thin;
+		 	border-color: #C0C0C0; 
+		 	margin-bottom: 10px; 
+			border-radius:8px;
+		 	padding: 0px 0px 0px 10px;
+		 	width:150px;
+	 	 	background-color:;
+			text-align: left
+		text-align: center}
+
+.newHeading	{border-style: dashed;
+		 	border-width: thin;
+		 	border-color: #C0C0C0;
+			border-radius:8px;
+		 	margin-bottom: 10px; 
+		 	padding: 0px 0px 0px 10px;
+		 	width:150px;
+	 	 	background-color:;
+			text-align: left
+		text-align: center}
+		
+.dag 		{
+			width:170px;
+			margin-bottom:10px;
+			}
+.addTask	{}
+
+.add 		{border-style: dotted;}	
+		 
+#header 	{;
+			
+			}
+#content	{position:relative;background-color:green;width:2000px;}
+#opgaver	{float:left;
+			width:600px;
+			border: none thick green;
+			}
+#opgaver h1{text-align: center;}
+#uge		{position:relative;float:left;width:600px;text-align: center;}
+#footer 	{;}
+#left	 	{}
+	
+	
+	/* #button1 {background-color:yellow; display:inline;float:left;}
+				.task p {display:inline;float:left;}
