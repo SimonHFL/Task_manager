@@ -68,7 +68,7 @@ include 'mySQLconnect.php';
 			updateWhere($table, $updateColumn, $updateValue, $whereColumn, $whereValue);
 		}
 
-	// handling sletHeader
+	// handling of 'sletHeader' form
 	if ($_POST[sletHeader])
 		{	
 			$table = 'Headings';
@@ -80,7 +80,7 @@ include 'mySQLconnect.php';
 			autoIncrementTable($table);		
 		}
 
-	// handling slet alt
+	// handling of delete all form
 	if ($_POST[sletalt]) 
 	{
 		$table = 'Taskman';
@@ -120,8 +120,6 @@ include 'mySQLconnect.php';
 		$valueString = "NULL, '" . $_POST[heading] ."'";
 		insertInto($table, $columnString, $valueString);
 	}
-	
-
 	
 // import data to view
 
