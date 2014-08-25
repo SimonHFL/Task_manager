@@ -10,7 +10,7 @@
 			<label> skriv underopgaver
 				<input type="textfield" name="underopgave" id="opgave"/>
 			</label>
-			<input type="hidden" name="dag" id="dag" value="<?php echo $dag ?>"/>
+			<input type="hidden" name="dag" id="dag" value="ingen valgt"/>
 			<p>
 				<label>
 					<input type="submit" name="submit" id="submit" value="Submit"/>
