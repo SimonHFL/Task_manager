@@ -20,20 +20,20 @@ include 'inc/controller.php';
 			
 			<div id="opgaver">
 
-				<h1> Opgaver </h1>
+				<h1> Tasks </h1>
 
 				<?php include 'inc/addTask.php'; ?>
 				
 				<div class='newHeadingContainer'>
 					
-					<div class='newHeading'>tilføj gruppe </div>
+					<div class='newHeading'>add group</div>
 					
 					<div class='addHeading'>
 						
 						<div>
 						
 							<form id="form5" name="form5" method="post" action="">
-									<label> skriv overskrift
+									<label> group
 										<input type="text" name="heading" id="heading"/>
 									</label>
 									<p>
@@ -52,20 +52,21 @@ include 'inc/controller.php';
 				<?php 
 				// iterate through tasks with no heading specification									
 						for($i = 0; $i <$count; $i++) {	
-							if ($result_list[$i][4] == 'ingen') {
+							if ($result_list[$i][4] == 'None') {
 								include 'inc/task.php';	
 							}						
 						}	
 
 				// iterate through headings	
 					for($j = 0; $j <$countHeadings; $j++) {	?>
+						</br>
 						<div class='header'>
 							
 							<?php echo "<b>" . $result_listHeadings[$j][1] . "</b>";?>
 							<div class='headerSlet'>	
 										
 								<form method='post' action='' name='form7'>
-									<button style='inline' type='submit' name='sletHeader' value= <?php echo $result_listHeadings[$j][0]; ?>> slet </button>
+									<button style='inline' type='submit' name='sletHeader' value= <?php echo $result_listHeadings[$j][0]; ?>> delete </button>
 								</form>
 								
 							</div>
@@ -83,7 +84,7 @@ include 'inc/controller.php';
 				
 				<form method='post' action='' name='form3'>
 					<label>
-						<input type="submit" name="sletalt" id="sletalt" value="slet alt"/>
+						<button style='inline' type="submit" name="sletalt" id="sletalt" value="slet alt"> delete all </button>
 					</label>
 				</form>
 		
@@ -91,7 +92,7 @@ include 'inc/controller.php';
 			
 			<div id="uge">
 				
-				<h1> Uge </h1>
+				<h1> Week </h1>
 
 				<?php 
 				// iterate through array

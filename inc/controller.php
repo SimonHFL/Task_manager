@@ -97,7 +97,7 @@ include 'mySQLconnect.php';
 		
 		$table = 'Taskman';
 		$columnString = '`Nummer`, `Opgave`, `Underopgave`, `Dag`, `Heading`';
-		$valueString = "NULL, '" . $opgave . "', '" .$underopgave . "', '" .$dagGlobal . "', 'ingen'";
+		$valueString = "NULL, '" . $opgave . "', '" .$underopgave . "', '" .$dagGlobal . "', 'None'";
 		insertInto($table, $columnString, $valueString);
 	}
 
@@ -144,7 +144,7 @@ include 'mySQLconnect.php';
 	}
 	
 // declare week array
-$uge = array("Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag");
+$uge = array("Monday", "Tuesday", "Wedensday", "Thursday", "Friday", "Saturday", "Sunday");
 
 mysqli_close($con);
 	
